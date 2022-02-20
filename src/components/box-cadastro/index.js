@@ -32,7 +32,7 @@ export const BoxCadastro = () => {
 
     const handleSubmit = () => {
         async function addPalpite() {
-            axios.post("http://localhost:3001/add-palpites", {
+            axios.post("https://palpites-futebol.herokuapp.com/add-palpites", {
                 userName: getPalpite.nome,
                 timeOneGols: getPalpite.golsfla,
                 timeTwoGols: getPalpite.golsgalo,

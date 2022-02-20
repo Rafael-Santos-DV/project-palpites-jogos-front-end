@@ -5,7 +5,7 @@ import axios from "axios";
 
 export const Home = () => {
     const [getPalpites, setPalpites] = useState();
-    const url = "http://localhost:3001/get-palpites";
+    const url = "https://palpites-futebol.herokuapp.com/get-palpites";
 
     useEffect(() => { 
 
