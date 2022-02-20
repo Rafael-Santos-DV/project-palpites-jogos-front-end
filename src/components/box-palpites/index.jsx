@@ -3,9 +3,9 @@ import galo from "../../assets/galo.png";
 import { MdOutlinePeopleAlt } from "react-icons/md";
 import { BoxData, BoxOne, BoxRowOne, BoxTimes, ContainerRow } from "./style";
 
-export const BoxPaltipes = () => {
+export const BoxPaltipes = (props) => {
     return(
-        <BoxTimes>
+        <BoxTimes page={props.page} status={props.status} >
             <BoxRowOne>
                 <MdOutlinePeopleAlt className="icon"/>
                 <strong>Rafael Santos</strong>

@@ -15,7 +15,7 @@ export const HeaderMenu = () => {
         }else if(path === "/fazerpalpites"){
             setParam("link-router2");
 
-        }else if(path === "ganhadores"){
+        }else if(path === "/ganhadores"){
             setParam("link-router3");
         }
 

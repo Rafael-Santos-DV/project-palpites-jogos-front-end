@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 
 export const BoxTimes = styled.div`
     width: 100%;
@@ -10,7 +10,36 @@ export const BoxTimes = styled.div`
     border-radius: 10px;
     gap: 10px;
     background-color: rgb(193, 182, 250);
-
+    position: relative;
+    
+    ${props => (props.page && props.status ?
+    css`
+        &::before {
+            content: "Vencedor";
+            text-align: center;
+            position: absolute;
+            font-weight: 700;
+            color: #03ff46;
+            right: 2px;
+            top: 24%;
+            width: 40%;
+            height: 10%;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            animation: animateGanhador 1s infinite;
+            
+            @keyframes animateGanhador {
+                from {
+                    text-shadow: 0px 0px 0px;
+                }
+                to {
+                    text-shadow: 0px 0px 5px #03ff46;
+                }
+            }
+        }
+    `
+    : ``)}
+    
 `;
 
 export const ContainerRow = styled.div`
