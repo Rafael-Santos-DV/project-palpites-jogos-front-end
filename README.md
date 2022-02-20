@@ -1,6 +1,6 @@
 # Aplicação ReactJs de palpites de futebol
 
-Você pode conferir o back-end do projeto -> [Create React App](https://github.com/Rafael-Santos-DV/project-palpites-futebol-back-end).
+Você pode conferir o back-end do projeto -> [project-back-end](https://github.com/Rafael-Santos-DV/project-palpites-futebol-back-end).
 
 ## Clonar o projeto
 

@@ -50,6 +50,9 @@ export const ContainerCadastro = styled.div`
                 color: #ffffff;
             }
         }
+        > span {
+            font-weight: 700;
+        }
     }
 
    
