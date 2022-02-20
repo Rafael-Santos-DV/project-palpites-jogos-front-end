@@ -3,7 +3,7 @@ import galo from "../../assets/galo.png";
 import { MdOutlinePeopleAlt } from "react-icons/md";
 import { BoxData, BoxOne, BoxRowOne, BoxTimes, ContainerRow } from "./style";
 
-export const BoxCadastro = () => {
+export const BoxPaltipes = () => {
     return(
         <BoxTimes>
             <BoxRowOne>

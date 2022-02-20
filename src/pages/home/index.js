@@ -1,15 +1,15 @@
 import React from "react";
-import { BoxCadastro } from "../../components/box-cadastro";
+import { BoxPaltipes } from "../../components/box-palpites";
 
 export const Home = () => {
     return(
         <React.Fragment>
-            <BoxCadastro />
-            <BoxCadastro />
-            <BoxCadastro />
-            <BoxCadastro />
-            <BoxCadastro />
-            <BoxCadastro />
+            <BoxPaltipes />
+            <BoxPaltipes />
+            <BoxPaltipes />
+            <BoxPaltipes />
+            <BoxPaltipes />
+            <BoxPaltipes />
         </React.Fragment>
     );
 }

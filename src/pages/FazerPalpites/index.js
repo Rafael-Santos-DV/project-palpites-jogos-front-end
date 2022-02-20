@@ -1,3 +1,5 @@
+import { BoxCadastro } from "../../components/box-cadastro"
+
 export const FazerPalpites = () => {
-    return <div style={{color: "red"}}>ola</div>;
+    return <BoxCadastro />
 }
