@@ -1,8 +1,10 @@
-import { BrowserRouter } from "react-router-dom";
-import { BoxCadastro } from "../components/box-cadastro";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { HeaderMenu } from "../components/header";
+import { FazerPalpites } from "../pages/FazerPalpites";
+import { Home } from "../pages/home";
 import { GlobalStyle } from "../style/globalStyles";
 import { Box, Container } from "../style/styles";
+
 
 function App(){
     return(
@@ -11,12 +13,10 @@ function App(){
                 <GlobalStyle />
                 <Box>
                     <HeaderMenu />
-                    <BoxCadastro />
-                    <BoxCadastro />
-                    <BoxCadastro />
-                    <BoxCadastro />
-                    <BoxCadastro />
-                    <BoxCadastro />
+                    <Routes>
+                        <Route path="/" element={<Home />} />
+                        <Route path="/fazerpalpites" element={<FazerPalpites />} />
+                    </Routes>
                 </Box>
             </Container>
         </BrowserRouter>

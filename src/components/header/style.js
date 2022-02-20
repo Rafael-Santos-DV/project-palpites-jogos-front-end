@@ -1,4 +1,5 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
+
 
 export const ContainerHeader = styled.div`
     grid-column: 1 / span 3;
@@ -7,6 +8,15 @@ export const ContainerHeader = styled.div`
     flex-direction: column;
     text-align: center;
     gap: 10px;
+  
+    
+    @media only screen and (max-width: 768px) {
+        grid-column: 1 / span 2;
+    }
+
+    @media only screen and (max-width: 468px) {
+        grid-column: 1 / span 1;
+    }
 
     > h1 {
         color: #ffffff;
@@ -20,16 +30,31 @@ export const BoxNavigation = styled.nav`
     display: flex;
     justify-content: center;
     
+    
 `;
 
 export const OpUl = styled.ul`
     display: flex;
     flex-direction: row;
     gap: 50px;
+   
 
     > a {
         color: #000000;
     }
+    @media only screen and (max-width: 578px) {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+   ${(props) => (
+       css`
+       & .${props.nameClass}{
+                border-radius: 10px;
+                border-bottom: 2px solid #ff0035 !important;
+            }
+    `)
+   }
 
     & li {
         padding: 10px 20px;
@@ -41,7 +66,8 @@ export const OpUl = styled.ul`
         position: relative;
         display: flex;
         align-items: center;
-       
+        justify-content: center;
+        
 
         &::before{
             content: "";
@@ -64,7 +90,7 @@ export const OpUl = styled.ul`
             width: 0%;
             height: 100%;
             display: block;
-            box-shadow: inset 0px 0px 40px rgba(0, 0, 0, .1);
+            box-shadow: inset 0px 0px 5px rgba(0, 0, 0, .1);
             border-radius: 15px;
             animation: animateLeft 2s infinite;
         }
