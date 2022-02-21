@@ -1,5 +1,5 @@
-import flamengo from "../../assets/flamengo.png";
-import galo from "../../assets/galo.png";
+import psg from "../../assets/psg.png";
+import real from "../../assets/real-madrid.png";
 import { MdOutlinePeopleAlt } from "react-icons/md";
 import { BoxData, BoxOne, BoxRowOne, BoxTimes, ContainerRow } from "./style";
 
@@ -19,12 +19,12 @@ export const BoxPaltipes = (props) => {
             </BoxData>
             <ContainerRow>
                 <BoxOne>
-                    <img src={flamengo} alt="logo do time do Flamengo" />
+                    <img src={real} alt="logo do time do REAL" />
                     <span>{props.timeOne}</span>
                 </BoxOne>
                 <span>x</span>
                 <BoxOne>
-                    <img src={galo} alt="logo do time do Galo" />
+                    <img src={psg} alt="logo do time do PSG" />
                     <span>{props.timeTwo}</span>
                 </BoxOne>
             </ContainerRow>

@@ -1,7 +1,7 @@
 import { MdOutlinePeopleAlt } from "react-icons/md";
 import { BoxName, BoxTimesInput, ContainerCadastro } from "./style";
-import flamengo from "../../assets/flamengo.png";
-import galo from "../../assets/galo.png";
+import psg from "../../assets/psg.png";
+import real from "../../assets/real-madrid.png";
 import axios from "axios";
 import { useState } from "react";
 
@@ -76,7 +76,7 @@ export const BoxCadastro = () => {
 
                 <div>
                     <BoxTimesInput>
-                        <img src={flamengo} alt="logo do time do Flamengo" />
+                        <img src={real} alt="logo do time REAL" />
 
                         <input 
                             type="text" 
@@ -90,7 +90,7 @@ export const BoxCadastro = () => {
                     <span>x</span>
 
                     <BoxTimesInput>
-                        <img src={galo} alt="logo do time do Galo" />
+                        <img src={psg} alt="logo do time do PSG" />
 
                         <input 
                             type="text" 
