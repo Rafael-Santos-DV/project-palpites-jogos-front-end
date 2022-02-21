@@ -34,13 +34,13 @@ export const BoxCadastro = () => {
         async function addPalpite() {
             axios.post("https://palpites-futebol.herokuapp.com/add-palpites", {
                 userName: getPalpite.nome,
-                timeOneGols: getPalpite.golsfla,
-                timeTwoGols: getPalpite.golsgalo,
+                timeOneGols: getPalpite.golsTimeOne,
+                timeTwoGols: getPalpite.golsTimeTwo,
                 dataHours: new Date(),
             })
         }
-        if (getPalpite && getPalpite.golsfla && !isNaN(Number(getPalpite.golsfla)) &&
-        getPalpite.golsgalo && !isNaN(Number(getPalpite.golsgalo)) &&
+        if (getPalpite && getPalpite.golsTimeOne && !isNaN(Number(getPalpite.golsTimeOne)) &&
+        getPalpite.golsTimeTwo && !isNaN(Number(getPalpite.golsTimeTwo)) &&
         getPalpite.nome && String(getPalpite.nome)){
             if (!localStorage.getItem("palpite")) {
 
@@ -80,7 +80,7 @@ export const BoxCadastro = () => {
 
                         <input 
                             type="text" 
-                            name="golsfla"
+                            name="golsTimeOne"
                             onChange={handleAddValue}
                             style={{color: colors.time1}}
                         />
@@ -94,7 +94,7 @@ export const BoxCadastro = () => {
 
                         <input 
                             type="text" 
-                            name="golsgalo" 
+                            name="golsTimeTwo" 
                             onChange={handleAddValue}
                             style={{color: colors.time2}}
                         />
